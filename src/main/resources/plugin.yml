@@ -1,0 +1,4 @@
+name: WhatTheFuck
+version: '${version}'
+main: fi.jokni.whatthefuck.WhatTheFuck
+api-version: 1.18
