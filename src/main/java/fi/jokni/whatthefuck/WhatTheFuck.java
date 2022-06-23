@@ -10,14 +10,13 @@ public final class WhatTheFuck extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        getServer().getPluginManager().registerEvents(this,this);
-
+        getServer().getPluginManager().registerEvents(this, this);
     }
 
     @EventHandler
-    public void onjoin(PlayerJoinEvent e){
+    public void onJoin(PlayerJoinEvent e) {
         Player p = e.getPlayer();
-        if (p.isDead()){
+        if (p.isDead()) {
             p.spigot().respawn();
         }
     }
