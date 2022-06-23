@@ -16,7 +16,7 @@ public final class WhatTheFuck extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onjoin(PlayerJoinEvent e){
-        Player p =e.getPlayer();
+        Player p = e.getPlayer();
         if (p.isDead()){
             p.spigot().respawn();
         }
